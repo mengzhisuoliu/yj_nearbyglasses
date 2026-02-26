@@ -99,3 +99,6 @@ Thumbs.db
 
 # Local environment
 *.local
+
+#CLA
+.cla-signatures/
