@@ -9,7 +9,10 @@ attempting to detect smart glasses nearby and warn you.
 
 # Nearby Glasses 
 The app, called *Nearby Glasses*, has one sole purpose: Look for smart glasses nearby and warn you.
+
 <a href="https://play.google.com/store/apps/details?id=ch.pocketpc.nearbyglasses" target="_blank"><img width="239" height="71" alt="Get It On Google Play" src="https://github.com/user-attachments/assets/0feb46d1-969e-4f83-8fc7-c18d1bbed8ad" /></a>
+
+<a href="https://apt.izzysoft.de/packages/ch.pocketpc.nearbyglasses" taget="_blank"><img height="71" src="https://github.com/user-attachments/assets/9a711c51-6bce-43b3-af4f-4f198a94970f" alt="Get it at IzzyOnDroid" /></a>
 
 # Table of contents
  * [Nearby Glasses](#Nearby-Glasses)
@@ -20,6 +23,7 @@ The app, called *Nearby Glasses*, has one sole purpose: Look for smart glasses n
   * [Usage](#usage)
   * [ToDos](#todos)
   * [Tech-Solutionism?](#tech-solutionism)
+  * [Build from Source](#build-from-source)
   * [Shoutouts](#shoutouts)
   * [License and Credits](#license-and-credits)
 
@@ -154,6 +158,51 @@ RSSI drops roughly according to<br/>
 ## Tech-Solutionism?
 I know, this might be an odd place to do so, but just hear me out on this. I am aware this is a technical solution to a social problem, which is itsself amplified by tech.
 I do not want to promote techsolutionism nor do I want people to feel falsely secure. It's still an imperfect approach and propably always will be. It's not all good only because this app exists now. We need better solutions to curb on surveilance tech and privacy intrution.
+
+## Build from Source
+As *Nearby Glasses* is open source, you may also build the app yourself from the source code. This makes sure there are no other libraries included in the APK and you get what you want.
+
+Please Note This app builds upon:
+- Gradle Wrapper: 8.13
+- Android Gradle Plugin: 8.13.2
+- Kotlin: 1.9.22
+- compileSdk: 35
+- targetSdk: 35
+- minSdk: 26
+- No product flavors
+- Repositories: google() and mavenCentral() only
+- No Google Services or Firebase plugins
+
+### Requirements
+
+- **JDK 17** (required — project targets Java 17)
+- **Android SDK Platform 35** installed  
+  - compileSdk = 35  
+  - targetSdk = 35  
+- Git
+### Building APK step-by-step
+```bash
+#Verify Java version:
+
+ $java -version
+#It must report Java 17.
+
+#Get the source code
+ $git clone https://github.com/yjeanrenaud/yj_nearbyglasses
+ $cd yj_nearbyglasses
+
+#Build Debug
+ $./gradlew clean assembleDebug
+
+#Build Release (with your own signature cert)
+ $./gradlew clean assembleRelease
+
+#Build unsigned Release for IzzyOnDroid / F-Droid
+ $./gradlew clean izziFdroid 
+
+#Run and Test
+ $./gradlew test lint
+```
 
 ## Shoutouts
 - [@vfrmedia@social.tchncs.de](https://social.tchncs.de/@vfrmedia) for helping me with the warnings
