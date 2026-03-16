@@ -91,6 +91,7 @@
         <item>Schweizerdeutsch</item>
         <item>Französisch</item>
         <item>Spanisch</item>
+        <item>Chinesisch</item>
     </string-array>
     <string-array name="pref_language_values">
         <item></item> <!-- empty string means “follow system” -->
@@ -99,6 +100,7 @@
         <item>de-CH</item>
         <item>fr</item>
         <item>es</item>
+        <item>zh</item>
     </string-array>
     <!-- for notifications -->
     <string name="notifyText">⚠️ Smart Glasses befinden sich vielleicht in der Nähe</string>
