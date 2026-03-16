@@ -1,5 +1,9 @@
 # yj_nearbyglasses
 attempting to detect smart glasses nearby and warn you.
+# ⚠ WARNING! ⚠ 
+** *nearby-glasses-alert.pages.dev* is NOT RELATED TO MY PROJECT. They seem to hijack the name and try to make a quick profit from it. I do not endorse this.
+---
+
 <img width="270" height="600" align ="right" alt="Screenshot Nearby Glasses" src="https://github.com/yjeanrenaud/yj_nearbyglasses/blob/main/img/Screenshot%20Nearby%20Glasses%20(2).png" />
 # ⚠ WARNING! ⚠ 
 **HARASSING someone because you think they are wearing a covert surveillance device can be a criminal offence. It may even be a more serious offence than using such a device. Please seek legal advise regarding your local laws on this matter.**
